@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Задача 2</title>
+</head>
+<body>
+    <header>
+        <img src="image.jpg" id="logo" alt="Мега Дупер Ультра красивая картинка">
+        <div>
+            <nav>
+                <a href="">Ссылка меню 1</a>
+                <a href="">Ссылка 2</a>
+                <a href="">Ссылка 3</a>
+            </nav>
+            <h1>СУПЕР НАЗВАНИЕ</h1>
+        </div>
+    </header>
+    <main>
+        <div>
+            <ul>
+                <li><a href="http://kubsu.ru">Обычная</a></li>
+                <li><a href="https://kubsu.ru">Https</a></li>
+                <li><a href="https://kubsu.ru"><img src="image2.png" alt="Изображение" height="64px" width="64px"></a></li>
+                <li><a href="/">Сокращенная</a></li>
+                <li><a href="#logo">Ссылка на фрагмент</a></li>
+                <li><a href="?id=1234">Ссылка с параметром id</a></li>
+                <li><a href="?onepar=one&secpar=sec&thirdpar=third">Ссылка с 3 параметрами</a></li>
+                <li><a href="image.jpg">Относительная</a></li>
+                <li><a href="../visheodin">Выше на один</a></li>
+                <li><a href="../../vishedva">Выше на два</a></li>
+                <li>Текст текст <a href="">опа ссылка </a>текст текст</li>
+                <li><a href="http://kubsu.ru#main-content">Фрагмент с другого сайта</a></li>
+                <li><a href="">Пустая</a></li>
+                <li><a>Без href</a></li>
+                <li><a href="https://kubsu.ru" rel="nofollow">Запрещен переход поисковикам</a></li>
+                <li><nofollow>Запрещенную для индексации поисковиками</nofollow></li>
+                <li>
+                    <ol>
+                        <li><a href="" title="Odinssilka">Первая + title</a></li>
+                        <li><a href="" title="Dvassilka">Вторая + title</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div>
+            <table border="1px">
+                <thead>
+                    <tr>
+                        <th>Очень</th>
+                        <th>серьёзные</th>
+                        <th>названия</th>
+                        <th>колонок!</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan="2" class="merged-cell">8 и 12</td>
+                    </tr>
+                    <tr>
+                        <td>183402</td>
+                        <td>10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>18</td>
+                        <td colspan="2" class="merged-cell">19-20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <div>
+            <form action="#" method="POST">
+                <label>ФИО<br>
+                    <input type="text" name="fio">
+                </label>
+                <br>
+                <label>Телефон:<br>
+                    <input type="tel" name="phone">
+                </label>
+                <br>
+                <label>Эл-почта:<br>
+                    <input type="email" name="email">
+                </label>
+                <br>
+                <label>Дата рождения:<br>
+                    <input type="date" name="birthday">
+                </label>
+                <br>
+                <label>
+                    <span>Пол:</span><br>
+                    <label><input type="radio" name="gender" value="male"> Мужской</label>
+                    <label><input type="radio" name="gender" value="female"> Женский</label>
+                </label>
+                <br>
+                <label>
+                    <label>Любимый язык программирования (множественный выбор):</label><br>
+                    <select name="languages[]" multiple="multiple">
+                        <option value="pascal">Pascal</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="php">PHP</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="haskell">Haskell</option>
+                        <option value="clojure">Clojure</option>
+                        <option value="prolog">Prolog</option>
+                        <option value="scala">Scala</option>
+                    </select>
+                </label>
+                <br>
+                <label>Биография:<br>
+                    <textarea name="bio" rows="5" cols="40" placeholder="Расскажите о себе..."></textarea>
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="contract" value="agreed" required> 
+                    С контрактом ознакомлен(а)
+                </label>
+                <br>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            (с) Лейднер Леонид
+        </div>
+    </footer>
+</body>
+</html>
