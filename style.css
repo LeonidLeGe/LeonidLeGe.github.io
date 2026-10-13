@@ -22,3 +22,9 @@ body {
     margin: 10px;
     float: left;
 }
+tbody tr:nth-child(even) {
+	background-color: grey;
+}
+tbody tr:nth-child(odd) {
+	background-color: #9fe278;
+}
